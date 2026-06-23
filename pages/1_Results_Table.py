@@ -32,11 +32,12 @@ st.write(
 with st.form("search_form"):
     col1, col2 = st.columns([3, 1])
     with col1:
-        query = st.text_input("Search term", value="home workout fitness apps")
+        query = st.text_input("Search term", value="home fitness apps")
     with col2:
         n_hits = st.number_input("Max results", min_value=5, max_value=50, value=20, step=5)
 
     submitted = st.form_submit_button("Search", use_container_width=True)
+st.caption("don't be shy, type whatever you want")
 
 # --- Exécution de la recherche -------------------------------------------------
 if submitted:
@@ -89,3 +90,4 @@ if "results_df" in st.session_state:
     )
 else:
     st.info("Lancez une recherche ci-dessus pour afficher les résultats.")
+st.caption("Wish me good luck on my weight loss journey <3 Allahuma yassir")
