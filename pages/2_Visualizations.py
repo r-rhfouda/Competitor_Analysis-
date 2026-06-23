@@ -164,4 +164,5 @@ if text_blob.strip():
     st.pyplot(fig_wc)
 else:
     st.write("Pas assez de texte disponible pour générer un word cloud.")
+st.caption("💡 Observation : la majorité des apps fitness sont gratuites, ce qui suggère un modèle économique basé sur la publicité ou les achats in-app.")
     
